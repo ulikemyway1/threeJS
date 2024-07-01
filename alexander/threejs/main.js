@@ -97,6 +97,7 @@ class SceneSetup {
         stopButtonAmination: () => {
           buttonAmination = !buttonAmination;
           clips.forEach((clip) => {
+            console.log(clip.name)
             if (buttonAmination) {
               this.mixer.clipAction(clip).play();
             } else {
